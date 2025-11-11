@@ -17,9 +17,11 @@ export default function Pagina() {
       />
       <div className={`
           flex flex-1 gap-5
-        `}>
+      `}>
         <Menu />
-        <Conteudo />
+        <Conteudo>
+          <h1>Conteúdo</h1>
+        </Conteudo>
       </div>
       <Rodape 
         esquerda="Feito com amor por Formação.DEV" 
