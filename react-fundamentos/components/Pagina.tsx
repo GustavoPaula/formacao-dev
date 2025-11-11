@@ -11,6 +11,7 @@ export default function Pagina(props: any) {
         <Cabecalho 
           titulo={props.titulo}
           subtitulo={props.subtitulo}
+          className="h-24 bg-linear-to-r from-blue-700 to-zinc-900"
         />
         <Conteudo>
           {props.children}

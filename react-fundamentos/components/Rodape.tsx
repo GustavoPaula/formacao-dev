@@ -1,4 +1,9 @@
-export default function Rodape(props: any) {
+interface RodapeProps {
+  esquerda: string
+  direita: string
+}
+
+export default function Rodape(props: RodapeProps) {
   return (
     <div className={`
         flex text-3xl justify-between items-center

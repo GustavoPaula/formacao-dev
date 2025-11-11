@@ -1,6 +1,11 @@
 import Link from "next/link";
 
-export default function MenuItem(props: any) {
+interface MenuItemProps {
+  url: string
+  texto: string
+}
+
+export default function MenuItem(props: MenuItemProps) {
   return (
     <Link href={props.url} className={`
       px-4 py-2
