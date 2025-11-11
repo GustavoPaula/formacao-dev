@@ -5,26 +5,21 @@ import Rodape from "./Rodape";
 
 export default function Pagina(props: any) {
   return (
-    <div className={`
-      flex flex-col h-screen
-      p-5 gap-5
-    `}>
-      <Cabecalho 
-        titulo={props.titulo}
-        subtitulo={props.subtitulo}
-      />
-      <div className={`
-        flex flex-1 gap-5
-      `}>
-        <Menu />
+    <div className="flex h-screen p-4 gap-4">
+      <Menu />
+      <div className="flex flex-col flex-1 gap-5">
+        <Cabecalho 
+          titulo={props.titulo}
+          subtitulo={props.subtitulo}
+        />
         <Conteudo>
           {props.children}
         </Conteudo>
+        <Rodape 
+          esquerda="Feito com amor por Formação.DEV" 
+          direita={`Desenvolvido em ${new Date().getFullYear()}`}
+        />
       </div>
-      <Rodape 
-        esquerda="Feito com amor por Formação.DEV" 
-        direita={`Desenvolvido em ${new Date().getFullYear()}`}
-      />
     </div>
   )
 }
