@@ -1,32 +1,15 @@
-import Cabecalho from "@/components/Cabecalho";
-import "../app/globals.css"
-import Conteudo from "@/components/Conteudo";
-import Rodape from "@/components/Rodape"
-import Menu from "@/components/Menu";
- 
-export default function Pagina() {
-  const ano = new Date().getFullYear()
+import Pagina from "@/components/Pagina"
+import "@/app/globals.css"
+
+export default function Page() {
   return (
-    <div className={`
-      flex flex-col h-screen
-      p-5 gap-5
-    `}>
-      <Cabecalho 
-        titulo="Minha página"
-        subtitulo="Estou na pasta pages"
-      />
-      <div className={`
-          flex flex-1 gap-5
-      `}>
-        <Menu />
-        <Conteudo>
-          <h1>Conteúdo</h1>
-        </Conteudo>
-      </div>
-      <Rodape 
-        esquerda="Feito com amor por Formação.DEV" 
-        direita={`Desenvolvido em ${ano}`}
-      />
-    </div>
+    <Pagina titulo="Minha aplicação Web" subtitulo="Componente Página na pasta pages" >
+      <ul className="list-disc">
+        <li>React</li>
+        <li>Next</li>
+        <li>JS</li>
+        <li>TS</li>
+      </ul>
+    </Pagina >
   )
 }
