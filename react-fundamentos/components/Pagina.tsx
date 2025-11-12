@@ -1,17 +1,17 @@
+import AreaLateral from "./AreaLateral";
 import Cabecalho from "./Cabecalho";
 import Conteudo from "./Conteudo";
-import Menu from "./Menu";
 import Rodape from "./Rodape";
 
 export default function Pagina(props: any) {
   return (
-    <div className="flex h-screen p-4 gap-4">
-      <Menu />
-      <div className="flex flex-col flex-1 gap-5">
+    <div className="flex h-screen">
+      <AreaLateral />
+      <div className="flex flex-col flex-1">
         <Cabecalho 
           titulo={props.titulo}
           subtitulo={props.subtitulo}
-          className="h-24 bg-linear-to-r from-blue-700 to-zinc-900"
+          className="h-16 bg-zinc-800"
         />
         <Conteudo>
           {props.children}
