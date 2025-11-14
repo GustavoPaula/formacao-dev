@@ -3,7 +3,7 @@ import Menu from "./Menu";
 
 export default function AreaLateral() {
   return (
-    <div className="p-5 ">
+    <div className="flex flex-col gap-5">
       <Logo />
       <Menu />
     </div>
