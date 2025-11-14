@@ -13,6 +13,7 @@ export default function Menu() {
 
       <span className="text-sm text-zinc-500 pl-3 pt-4">Estado</span>
       <MenuItem icone={<IconCode />} texto="Componente sem estado" url="/estado/sem" />
+      <MenuItem icone={<IconCode />} texto="Componente com estado" url="/estado/com" />
     </div>
   );
 }
