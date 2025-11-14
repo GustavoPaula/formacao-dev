@@ -12,7 +12,7 @@ export default function Menu() {
       <MenuItem icone={<IconSitemap />} texto="Pagina #2" url="/pagina" />
 
       <span className="text-sm text-zinc-500 pl-3 pt-4">Estado</span>
-      <MenuItem icone={<IconCode />} texto="Componente sem estado" url="/" />
+      <MenuItem icone={<IconCode />} texto="Componente sem estado" url="/estado/sem" />
     </div>
   );
 }
