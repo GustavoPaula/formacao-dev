@@ -1,4 +1,4 @@
-import { Icon360View, IconCode, IconFileCheck, IconHome, IconSitemap } from "@tabler/icons-react";
+import { Icon360View, IconCode, IconFileCheck, IconForms, IconHome, IconSitemap } from "@tabler/icons-react";
 import MenuItem from "./MenuItem";
 
 export default function Menu() {
@@ -14,6 +14,7 @@ export default function Menu() {
       <span className="text-sm text-zinc-500 pl-3 pt-4">Estado</span>
       <MenuItem icone={<IconCode />} texto="Componente sem estado" url="/estado/sem" />
       <MenuItem icone={<IconCode />} texto="Componente com estado" url="/estado/com" />
+      <MenuItem icone={<IconForms />} texto="Campo de texto" url="/estado/campoTexto" />
     </div>
   );
 }
