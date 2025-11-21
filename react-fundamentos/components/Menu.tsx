@@ -1,4 +1,4 @@
-import { Icon360View, IconCalculator, IconCode, IconFileCheck, IconForms, IconHome, IconSitemap } from "@tabler/icons-react";
+import { Icon360View, IconArrowDownSquare, IconArrowUpSquare, IconCalculator, IconCode, IconFileCheck, IconForms, IconHome, IconSitemap } from "@tabler/icons-react";
 import MenuItem from "./MenuItem";
 
 export default function Menu() {
@@ -16,6 +16,10 @@ export default function Menu() {
       <MenuItem icone={<IconCode />} texto="Componente com estado" url="/estado/com" />
       <MenuItem icone={<IconForms />} texto="Campo de texto" url="/estado/campoTexto" />
       <MenuItem icone={<IconCalculator />} texto="Desafio Calculadora" url="/estado/desafioCalculadora" />
+
+      <span className="text-sm text-zinc-500 pl-3 pt-4">Comunicação</span>
+      <MenuItem icone={<IconArrowDownSquare />} texto="Comunicação direta" url="/comunicacao/direta" />
+      <MenuItem icone={<IconArrowUpSquare />} texto="Comunicação indireta" url="/comunicacao/indireta" />
     </div>
   );
 }
